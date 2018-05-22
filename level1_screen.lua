@@ -1,5 +1,4 @@
 -----------------------------------------------------------------------------------------
---
 -- game_level1.lua
 -- Created by: Daniel
 -- Date: Nov. 22nd, 2014
@@ -281,35 +280,6 @@ local function CheckUserAnswerInput()
     end
 end 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 local function TouchListenerAnswerbox(touch)
     --only work if none of the other boxes have been touched
     if (alternateAnswerBox1AlreadyTouched == false) and 
@@ -354,46 +324,6 @@ local function TouchListenerAnswerbox(touch)
         end
     end                
 end 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 local function TouchListenerAnswerBox1(touch)
     --only work if none of the other boxes have been touched
