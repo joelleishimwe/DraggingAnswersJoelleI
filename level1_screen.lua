@@ -282,6 +282,34 @@ local function CheckUserAnswerInput()
 end 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 local function TouchListenerAnswerbox(touch)
     --only work if none of the other boxes have been touched
     if (alternateAnswerBox1AlreadyTouched == false) and 
@@ -293,7 +321,7 @@ local function TouchListenerAnswerbox(touch)
             --let other boxes know it has been clicked
             answerboxAlreadyTouched = true
 
-        --drag the answer to follow the mouse
+        -- drag the answer to follow the mouse
         elseif (touch.phase == "moved") then
             
             answerbox.x = touch.x
@@ -326,6 +354,46 @@ local function TouchListenerAnswerbox(touch)
         end
     end                
 end 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 local function TouchListenerAnswerBox1(touch)
     --only work if none of the other boxes have been touched
@@ -366,6 +434,7 @@ local function TouchListenerAnswerBox1(touch)
         end
     end
 end 
+
 
 local function TouchListenerAnswerBox2(touch)
     --only work if none of the other boxes have been touched
@@ -462,11 +531,6 @@ local function RemoveAnswerBoxEventListeners()
     alternateAnswerBox2:removeEventListener("touch", TouchListenerAnswerBox2)
     alternateAnswerBox3:removeEventListener("touch", TouchListenerAnswerBox3)
 end 
-
-----------------------------------------------------------------------------------
--- GLOBAL FUNCTIONS
-----------------------------------------------------------------------------------
-
 
 ----------------------------------------------------------------------------------
 -- GLOBAL SCENE FUNCTIONS
